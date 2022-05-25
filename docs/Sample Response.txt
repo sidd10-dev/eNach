@@ -1,0 +1,9 @@
+<form id="PostToMerchant" name="PostToMerchant" action="MerchantPage.aspx" method="POST">
+                <input type="hidden" ID="CheckSumVal" name="CheckSumVal" value="aeea600b85da7bd2e700387b365895fdb51bc6ca463095addbacdff52109b03c">
+                                <input type="hidden" ID="MandateRespDoc" name="MandateRespDoc" value="{'Status':'Failed','MsgId':'29072019dev010','RefId':'0000002272','Errors':[{'Error_Code':'AP23','Error_Message':'Rejected as per customer confirmation'}],'Filler1':'Filler1','Filler2':'Filler2','Filler3':'Filler3','Filler4':'Filler4','Filler5':'Filler5','Filler6':'Filler6','Filler7':'Filler7','Filler8':'Filler8','Filler9':'Filler9','Filler10':'Filler10'}">
+                                </form>
+                                
+ 
+'Status':'Success',  
+Errorcode will be 000 and errormessage will be N/A  in case of success.
+ 

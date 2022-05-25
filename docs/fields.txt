@@ -1,0 +1,19 @@
+Fields to be otained from customer:
+
+Name
+Mobile
+Email
+Acc no
+Start date - current date
+Expiry date - duration
+Debit amount
+Debit Frequency
+IFSC Code
+PAN
+Account type
+Bank Code
+
+DATA FLOW:
+Form submit -> AESEncrypt -> Checksum calculate -> verify IFSC -> Test with simulator -> same -> Store in DB -> Send data to eMandate
+										|
+										-> Not same -> Invalid Data

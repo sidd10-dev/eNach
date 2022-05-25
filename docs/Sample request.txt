@@ -1,0 +1,34 @@
+
+<form id="PostForm" name="PostForm" action="Emandate.aspx" method="POST"> 
+<input type="hidden" ID="UtilCode" name="UtilCode" value="Aesencrypted" /> 
+<input type="hidden" ID="Short_Code" name="Short_Code" value="Aesencrypted" /> 
+<input type="hidden" ID="Merchant_Category_Code" name="Merchant_Category_Code" value="" /> 
+<input type="hidden" ID="CheckSum" name="CheckSum" value=" Sha256Hash " /> 
+<input type="hidden" ID="MsgId" name="MsgId" value="plaintext" /> 
+<input type="hidden" ID="Customer_Name" name="Customer_Name" value="Aesencrypted" /> 
+<input type="hidden" ID="Customer_TelphoneNo" name="Customer_TelphoneNo" value="Aesencrypted" /> 
+<input type="hidden" ID="Customer_EmailId" name="Customer_EmailId" value="Aesencrypted" /> 
+<input type="hidden" ID="Customer_Mobile" name="Customer_Mobile" value="Aesencrypted" /> 
+<input type="hidden" ID="Customer_AccountNo" name="Customer_AccountNo" value="Aesencrypted" /> 
+<input type="hidden" ID="Customer_StartDate" name="Customer_StartDate" value="yyyy-MM-dd" /> 
+<input type="hidden" ID="Customer_ExpiryDate" name="Customer_ExpiryDate" value="yyyy-MM-dd" /> 
+<input type="hidden" ID="Customer_DebitAmount" name="Customer_DebitAmount" value="decimal" /> 
+<input type="hidden" ID="Customer_MaxAmount" name="Customer_MaxAmount" value="decimal" /> 
+<input type="hidden" ID="Customer_DebitFrequency" name="Customer_DebitFrequency" value="plaintext" /> 
+<input type="hidden" ID="Customer_SequenceType" name="Customer_SequenceType" value="plaintext" /> 
+<input type="hidden" ID="Customer_InstructedMemberId" name="Customer_InstructedMemberId" value="plaintext" /> 
+<input type="hidden" ID="Customer_Reference1" name="Customer_Reference1" value="Aesencrypted" /> 
+<input type="hidden" ID="Customer_Reference2" name="Customer_Reference2" value="Aesencrypted" /> 
+<input type="hidden" ID="Channel" name="Channel" value="plaintext" /> 
+<input type="hidden" ID="Filler1" name="Filler1" value="plaintext" /> 
+<input type="hidden" ID="Filler2" name="Filler2" value="plaintext" /> 
+<input type="hidden" ID="Filler3" name="Filler3" value="plaintext" /> 
+<input type="hidden" ID="Filler4" name="Filler4" value="plaintext" /> 
+<input type="hidden" ID="Filler5" name="Filler5" value="plaintext" /> 
+<input type="hidden" ID="Filler6" name="Filler6" value="plaintext" /> 
+<input type="hidden" ID="Filler7" name="Filler7" value="plaintext" /> 
+<input type="hidden" ID="Filler8" name="Filler8" value="plaintext" /> 
+<input type="hidden" ID="Filler9" name="Filler9" value="plaintext" /> 
+<input type="hidden" ID="Filler10" name="Filler10" value="plaintext" /> 
+</form> 
+<script language='javascript'>var vPostForm = document.PostForm;vPostForm.submit();</script> 
