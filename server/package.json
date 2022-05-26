@@ -23,6 +23,7 @@
     "js-sha256": "^0.9.0",
     "jsonwebtoken": "^8.5.1",
     "mysql": "^2.18.1",
+    "node-2fa": "^2.0.3",
     "nodemon": "^2.0.16",
     "session": "^0.1.0"
   }

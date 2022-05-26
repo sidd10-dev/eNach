@@ -8,6 +8,8 @@ const shaEncryptor = require('./sha256Encrypt')
 const bcrypt = require('bcrypt')
 const cookieParser = require('cookie-parser')
 const session = require('express-session')
+const jwt = require('jsonwebtoken')
+const twoFactor = require('node-2fa')
 
 const db = mysql.createConnection({
     host: "localhost",
@@ -37,7 +39,7 @@ app.use(session({
     resave: false,
     saveUninitialized: false,
     cookie: {
-        expires: 60*60*24
+        expires: 60 * 60 * 24
     }
 }))
 
@@ -54,38 +56,104 @@ app.post('/api/aes256encrypt', (req, res) => res.send(aesEncryptor(req.body)))
 
 app.post('/api/sha256encrypt', (req, res) => res.send(shaEncryptor(req.body)))
 
-app.get('/api/login', (req,res) => {
-    if(req.session.user)
-        res.send({isLoggedIn: true, user: req.session.user})
-    else 
-        res.send({isLoggedIn: false, user: req.session.user})
+app.get('/api/login', (req, res) => {
+    if (req.session.user)
+        res.send({ isLoggedIn: true, user: req.session.user })
+    else
+        res.send({ isLoggedIn: false, user: req.session.user })
 })
 
-app.post('/api/login', (req, res) => {
-    const q = `select * from admin where username = '${req.body.username}';`
-    // console.log(req.body)
+app.post('/api/verifyUser', (req, res) => {
+    console.log(req.body)
+    const q = `select * from admin where username = '${req.body.name}';`
     try {
         db.query(q, async (err, result) => {
             if (err) {
-                // console.log(err)
                 return res.send({ error: err })
             }
-            // console.log(result)
+
             if (result.length > 0) {
                 const comparePassword = await bcrypt.compare(req.body.password, result[0].password)
                 if (comparePassword) {
-                    req.session.user = result
-                    res.send(result)
+
+                    const token = jwt.sign({ name: req.body.username }, "swagatham")
+
+                    const newSecret = twoFactor.generateSecret({
+                        name: "Swagatham Non Profit",
+                        account: req.body.username
+                    })
+
+                    // console.log(newSecret.secret)
+
+                    const q = "update admin set secret = ? where username = ?;"
+
+                    db.query(q, [newSecret.secret, req.body.name], (err, result) => {
+                        if (err) {
+                            console.log(err)
+                            return res.send(err)
+                        }
+                        else
+                            console.log("Secret Stored")
+                    })
+
+                    return res.send({ isValidUser: true, token, qr: newSecret.qr })
+
                 } else {
-                    return res.status(401).send("Invalid Credentials")
+                    return res.status(401).send({ isValidUser: false, msg: "Invalid User Credentials" })
                 }
             } else {
-                return res.status(404).send("No such User")
+                return res.status(404).send({ isValidUser: false, msg: "Invalid User Credentials" })
             }
         })
     } catch (E) {
         return res.send({ error: E })
     }
+})
+
+app.post('/api/2FAregister', (req, res) => {
+    // console.log(req.body.username)
+    const q = 'select * from admin where username = ?;'
+    db.query(q, req.body.username, async (err, result) => {
+        if (err) {
+            // console.log(err)
+            return res.send({ error: err })
+        }
+        console.log(result)
+        const token = result[0].secret
+        console.log(result[0].secret)
+        const match = await twoFactor.verifyToken(token.trim(), req.body.code)
+        console.log(match)
+        if (!match)
+            return res.status(401).send("Incorrect Token")
+        else {
+            return res.send({ registrationComplete: true })
+        }
+    }
+    )
+})
+
+
+app.post('/api/login', (req, res) => {
+    const q = `select * from admin where username = '${req.body.username}';`
+    // console.log(req.body)
+    db.query(q, async (err, result) => {
+        if (err) {
+            // console.log(err)
+            return res.send({ error: err })
+        }
+        // console.log(result)
+        if (result.length > 0) {
+            const comparePassword = await bcrypt.compare(req.body.password, result[0].password)
+            if (comparePassword) {
+                req.session.user = result
+                res.send(result)
+            } else {
+                return res.status(401).send("Invalid Credentials")
+            }
+        } else {
+            return res.status(404).send("No such User")
+        }
+    })
 })
 
 app.get('/api/getCompanyCreds', (req, res) => {
@@ -99,29 +167,5 @@ app.get('/api/getCompanyCreds', (req, res) => {
         return res.send(result)
     })
 })
-
-// app.get('/getData', (req, res) => {
-//     const q = "select * from customer;"
-//     db.query(q, (err, result) => {
-//         if (err)
-//             throw err
-//         console.log(result)
-//         res.send("Data Fetched")
-//     })
-// })
-
-// ${req.body.Customer_Name},${req.body.Customer_Mobile},${req.body.Customer_Emailid},${req.body.Customer_AccountNo},${req.body.Customer_StartDate},${req.body.Customer_ExpiryDate},${req.body.Customer_DebitAmount},${req.body.Customer_Frequency},${req.body.Customer_IFSC},${req.body.Customer_PanNo},${req.body.Customer_AccountType},${req.body.Customer_Bank}
-
-// app.post('/createcustomer', (req, res) => {
-//     const q = `INSERT INTO customer (Customer_Name,Customer_Mobile,Customer_Emailid,Customer_AccoutNo, Customer_StartDate, Customer_ExpiryDate, Customer_DebitAmount,Customer_DebitFrequency,Customer_IFSC, Customer_PanNo, Customer_AccountType,Customer_Bank) VALUES (${req.body.Customer_Name},${req.body.Customer_Mobile},${req.body.Customer_Emailid},${req.body.Customer_Name},${req.body.Customer_StartDate},${req.body.Customer_ExpiryDate},${req.body.Customer_DebitAmount},${req.body.Customer_Frequency},${req.body.Customer_IFSC},${req.body.Customer_PanNo},${req.body.Customer_AccountType},${req.body.Customer_Bank})`
-//     const x = req.body
-
-//     db.query(q, (err, result) => {
-//         if (err)
-//             throw err
-//         return res.send("User Created!")
-//     })
-//     // s
-// })
 
 app.listen(3001, () => console.log("Server running!"))
