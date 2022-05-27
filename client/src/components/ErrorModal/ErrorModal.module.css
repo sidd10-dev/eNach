@@ -11,7 +11,7 @@
 }
 
 .modal {
-    background-color: #c5c8cf;
+    background-color: rgba(255,255,255,1);
     border-radius: 0.5rem;
     /* display: flex;
     flex-direction: column; */
@@ -20,7 +20,7 @@
     padding: 0;
     margin: 0;
     overflow: hidden;
-    box-shadow: 0.1rem 0.1rem 0.3rem rgba(0,0,0,0.5);
+    box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 1);
 }
 
 .header{

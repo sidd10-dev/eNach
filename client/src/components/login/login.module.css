@@ -1,0 +1,97 @@
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* border: black solid; */
+    margin-top: 10rem;
+
+    width: auto;
+    height: 20rem;
+    padding: 0 10rem;
+    position: relative;
+    /* border-top: 0.25rem solid white; */
+    background-color: white;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 0.5);
+    transition: 0.5s all;
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    height: 0.25rem;
+    width: 0%;
+    border-radius: 5%;
+    transition: 1s all;
+}
+
+.container:hover .line{
+    width: 100%;
+}
+
+.login{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.login_form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.elements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.desc{
+    margin-right: 2rem;
+    font-weight: 200;
+}
+
+.box{
+    width: 20rem;
+    height: 1rem;
+    border-radius: 5rem;
+    background-color: rgb(204, 204, 204);
+    border: none;
+    border: grey solid;
+    transition: 0.1s all;
+}
+
+.box:focus{
+    border: black solid;
+    transition: 0.5s all;
+}
+
+
+
+.box:hover{
+    border: black solid;
+    transition: 0.5s all;
+}
+
+.btn{
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 5rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 0.5);
+}
+
+.arrow{
+    margin-left: 5px;
+    font-size: 15px;
+}

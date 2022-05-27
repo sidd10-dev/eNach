@@ -3,6 +3,7 @@
 body {
   background-color: #c5c8cf;
   font-family: 'Nunito';
+  overflow-x: hidden;
 }
 
 .App {

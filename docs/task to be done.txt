@@ -1,0 +1,10 @@
+Sid:
+Logs
+check register2fa
+change to email
+retirieve IP
+
+Sunni:
+Navbar
+Responsive
+Main Page

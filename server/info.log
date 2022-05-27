@@ -1,0 +1,83 @@
+{"level":"info","message":{"hi":"Connected to DB"}}
+{"level":"info","message":{"hi":"Connected to DB"},"timestamp":"2022-05-26T10:01:04.782Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:01:30.419Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:01:46.185Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:02:44.165Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:02:46.554Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:03:30.442Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:03:52.417Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:03:58.521Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:04:10.982Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:04:22.234Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:09:20.186Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:09:34.335Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:10:43.072Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:11:17.750Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:11:25.871Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:11:37.887Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:16:20.541Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:22:52.811Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:23:16.451Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:23:24.620Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:23:31.945Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:24:09.616Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:24:13.206Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:31:38.339Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:35:11.857Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:36:04.244Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:36:30.615Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:37:14.979Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:38:43.631Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:40:11.829Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:40:53.274Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:43:12.191Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:43:24.502Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:43:29.393Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:43:33.496Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:43:45.348Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:44:19.461Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:45:35.223Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-26T10:45:40.312Z"}
+{"level":"info","message":"Fetched bank Data","timestamp":"2022-05-26T10:47:45.787Z"}
+{"level":"info","message":{"msg":"Attempt to login. Valid Credentials","requestBy":"sid"},"timestamp":"2022-05-26T10:47:48.243Z"}
+{"level":"info","message":{"msg":"Attempt to login(2FA Code). Valid Code Entered. User Logged In"},"timestamp":"2022-05-26T10:48:05.631Z"}
+{"level":"info","message":"Fetched bank Data","timestamp":"2022-05-26T10:48:06.474Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:26:04.536Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:30:12.239Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:30:21.125Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:31:17.833Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:32:52.469Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:33:18.234Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:34:13.473Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:34:20.113Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:35:10.832Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:35:59.310Z"}
+{"level":"info","message":{"msg":"Attempt to login. Valid Credentials","requestBy":"sid"},"timestamp":"2022-05-27T05:42:09.576Z"}
+{"level":"info","message":{"msg":"Attempt to login(2FA Code). Valid Code Entered. User Logged In"},"timestamp":"2022-05-27T05:43:03.987Z"}
+{"level":"info","message":"Fetched bank Data","timestamp":"2022-05-27T05:43:06.834Z"}
+{"level":"info","message":"Fetched bank Data","timestamp":"2022-05-27T05:43:25.486Z"}
+{"level":"info","message":{"msg":"New User has registered for two factor authentication","username":"sid"},"timestamp":"2022-05-27T05:43:53.252Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:48:44.675Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:48:51.775Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:49:13.414Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:49:21.691Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:49:32.097Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:49:36.206Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:49:40.232Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:49:47.228Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:51:13.915Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:51:50.403Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:51:54.933Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:52:07.607Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:52:14.876Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:52:33.546Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:52:42.957Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:53:07.842Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:53:14.150Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:53:18.692Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login. Valid Credentials\",\"requestBy\":\"sid\"}","timestamp":"2022-05-27T05:53:30.327Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login(2FA Code). Valid Code Entered. User Logged In\"}","timestamp":"2022-05-27T05:53:38.218Z"}
+{"level":"info","message":"Fetched bank Data","timestamp":"2022-05-27T05:54:25.688Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:54:40.679Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-27T05:57:45.430Z"}
+{"level":"info","message":"Fetched bank Data","timestamp":"2022-05-27T06:03:28.345Z"}
