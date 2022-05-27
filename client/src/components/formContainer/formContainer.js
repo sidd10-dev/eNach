@@ -5,6 +5,7 @@ import { v4 as uuid4 } from 'uuid'
 import Button from '../Button/Button'
 import Schedule from 'react-schedule-job'
 import axios from 'axios'
+import Navbar from "../Navbar/navbar";
 
 const FormContainer = (props) => {
 
@@ -179,7 +180,19 @@ const FormContainer = (props) => {
     ]
 
     return (
-        <>
+        <>  
+            <Navbar elements={[
+                {
+                    name: "logout",
+                    link: "logout",
+                    click: false
+                },
+                {
+                    name: "eMandate Form",
+                    link: "eMandate",
+                    click: true
+                }
+            ]}></Navbar>
             <h2 className = "header">eMandate Form</h2>
             <div className={`${styles['container']}`}>
             <form className={`${styles['form-container']}`} onSubmit={formSubmitHandler}>

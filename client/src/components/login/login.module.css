@@ -20,15 +20,16 @@
     position: absolute;
     top: 0;
     left: 0;
-    background-color: black;
+    background-color: rgb(0, 242, 255);
     height: 0.25rem;
-    width: 0%;
+    width: 100%;
+    transform: scaleX(0);
     border-radius: 5%;
     transition: 1s all;
 }
 
 .container:hover .line{
-    width: 100%;
+    transform: scaleX(1);
 }
 
 .login{
@@ -39,13 +40,15 @@
 .login_form{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: center; 
     align-items: center;
 }
 
 .elements{
+    /* border: solid black; */
+    width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -68,8 +71,6 @@
     border: black solid;
     transition: 0.5s all;
 }
-
-
 
 .box:hover{
     border: black solid;

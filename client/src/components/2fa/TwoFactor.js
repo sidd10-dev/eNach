@@ -5,36 +5,39 @@ import { useNavigate } from "react-router-dom";
 import Button from "../Button/Button";
 import ErrorModal from "../ErrorModal/ErrorModal";
 import styles from './TwoFactor.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import Navbar from "../Navbar/navbar";
 
 const TwoFactor = (props) => {
     const [isValidUser, setIsValidUser] = useState(false)
-    const [token, setToken] = useState()
-    const [username, setUserName] = useState()
+    const [secret, setSecret] = useState()
+    const [email, setemail] = useState()
     const [error, setError] = useState(null)
     const [qr, setQr] = useState("")
-    const userNameInputRef = useRef()
+    const emailInputRef = useRef()
     const passwordInputRef = useRef()
     const codeInputRef = useRef()
     const navigate = useNavigate()
 
     // const resetForm = () => {
-    //     userNameInputRef.current.value = ""
+    //     emailInputRef.current.value = ""
     //     passwordInputRef.current.value = ""
     //     codeInputRef.current.value = ""
     // }
 
     const verifyFormHandler = (event) => {
         event.preventDefault()
-        setUserName(userNameInputRef.current.value)
+        setemail(emailInputRef.current.value)
         const password = passwordInputRef.current.value
-        const name = userNameInputRef.current.value
+        const email = emailInputRef.current.value
         axios.post("http://localhost:3001/api/verifyUser", {
-            name,
+            email,
             password
         }).then(async (res) => {
             // console.log(res.data.token)
             setIsValidUser(res.data.isValidUser)
-            setToken(res.data.token)
+            setSecret(res.data.secret)
             setQr(res.data.qr)
             // console.log(isValidUser)
         }).catch(e => {
@@ -46,13 +49,14 @@ const TwoFactor = (props) => {
     const twoFactorSubmitHandler = (event) => {
         event.preventDefault()
         const code = codeInputRef.current.value
-        console.log(username)
+        console.log(email)
         axios.post("http://localhost:3001/api/2FAregister", {
-            username,
-            code
+            email,
+            code,
+            secret
         }).then(res => {
             if (res.data.registrationComplete) {
-                navigate('/login')
+                navigate('/')
             }
         }).catch(e => {
             setError({ msg: e.response.data || e.msg })
@@ -63,14 +67,30 @@ const TwoFactor = (props) => {
 
     return (
         <>
+            {error && (
+                <ErrorModal errorMsg={error.msg} onCancelError={() => setError(null)}></ErrorModal>
+            )}
+            <Navbar elements = {[
+                {
+                    name: "Login",
+                    link: "",
+                    click: false
+                },
+                {
+                    name: "2FA Registration",
+                    link: "register2fa",
+                    click: true
+                }
+            ]}></Navbar>
+            {/* <h2>Two Factor Authentication Registration</h2> */}
             {isValidUser && (
                 <>
                     <h2>Set Up 2FA</h2>
                     <div>
                         <img src={qr} className={styles.qr}></img>
                         <form onSubmit={twoFactorSubmitHandler}>
-                            {/* <label htmlFor="username">Username</label>
-                            <input type="text" name="username" ref={userNameInputRef}></input> */}
+                            {/* <label htmlFor="email">email</label>
+                            <input type="text" name="email" ref={emailInputRef}></input> */}
                             <label htmlFor="2FACode">2FA Code</label>
                             <input type="text" name="2FACode" ref={codeInputRef}></input>
                             <button type="submit">Submit</button>
@@ -80,17 +100,23 @@ const TwoFactor = (props) => {
             )}
             {!isValidUser && (
                 <>
-                    {error && (
-                        <ErrorModal errorMsg={error.msg} onCancelError={() => setError(null)}></ErrorModal>
-                    )}
-                    <h2>Enter your company credentials</h2>
-                    <form onSubmit={verifyFormHandler}>
-                        <label htmlFor="username">Username</label>
-                        <input type="text" name="username" ref={userNameInputRef}></input>
-                        <label htmlFor="password">Password</label>
-                        <input type="password" name="password" ref={passwordInputRef}></input>
-                        <Button type="submit">Login</Button>
-                    </form>
+                    <div className={styles.container}>
+                        <span className={styles.line}></span>
+                        <h2 className={styles.login}>2FA Registration</h2>
+                        <form className={styles.login_form} onSubmit={verifyFormHandler}>
+                            <div className={styles.elements}>
+                                <label className={styles.desc} htmlFor="email">Email</label>
+                                <input className={styles.box} type="text" name="email" ref={emailInputRef}></input>
+                            </div>
+
+                            <div className={styles.elements}>
+                                <label className={styles.desc} htmlFor="password">Password</label>
+                                <input className={styles.box} type="password" name="password" ref={passwordInputRef}></input>
+                            </div>
+
+                            <Button className={styles.btn} type="submit">Login<FontAwesomeIcon icon={faArrowRight} className={styles.arrow} /></Button>
+                        </form>
+                    </div>
                 </>
             )}
         </>

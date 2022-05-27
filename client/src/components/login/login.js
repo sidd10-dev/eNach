@@ -3,15 +3,17 @@ import { useNavigate } from 'react-router-dom';
 import styles from './login.module.css';
 import ErrorModal from '../ErrorModal/ErrorModal';
 import Button from '../Button/Button';
-import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
-import {faArrowRight} from '@fortawesome/free-solid-svg-icons'
+import Navbar from '../Navbar/navbar';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
+import validator from 'validator'
 // import logger from '../logger/logger';
 const axios = require('axios')
 
 
 const Login = (props) => {
     axios.defaults.withCredentials = true
-    const userNameInputRef = useRef()
+    const emailInputRef = useRef()
     const passwordInputRef = useRef()
     const codeInputRef = useRef()
     const [user, setUser] = useState(null)
@@ -20,13 +22,15 @@ const Login = (props) => {
     const navigate = useNavigate()
 
     const resetFormData = () => {
-        userNameInputRef.current.value = ''
+        emailInputRef.current.value = ''
         passwordInputRef.current.value = ''
     }
 
-    const validateForm = (username, password) => {
-        if (username.length == 0)
-            return { msg: "Username Can't be Empty!", valid: false }
+    const validateForm = (email, password) => {
+        if (email.length == 0)
+            return { msg: "Email Id Can't be Empty!", valid: false }
+        if(!validator.isEmail(email))
+            return { msg: "Invalid Email Id", valid: false }
         if (password.length == 0)
             return { msg: "Password Can't be Empty!", valid: false }
         return { valid: true }
@@ -34,14 +38,14 @@ const Login = (props) => {
 
     const loginHandler = (e) => {
         e.preventDefault()
-        const username = userNameInputRef.current.value
+        const email = emailInputRef.current.value
         const password = passwordInputRef.current.value
-        const formValid = validateForm(username, password)
+        const formValid = validateForm(email, password)
 
         if (formValid.valid) {
             resetFormData()
             axios.post("http://localhost:3001/api/login", {
-                username,
+                email,
                 password
             }).then(res => {
                 setUser(res.data.user)
@@ -82,15 +86,27 @@ const Login = (props) => {
             {error && (
                 <ErrorModal errorMsg={error.msg} onCancelError={() => setError(null)}></ErrorModal>
             )}
+            <Navbar elements={[
+                {
+                    name: "Login",
+                    link: "",
+                    click: true
+                },
+                {
+                    name: "2FA Registration",
+                    link: "register2fa",
+                    click: false
+                }
+            ]}></Navbar>
             {!user && (
                 <>
                     <div className={styles.container}>
-                        <span className = {styles.line}></span>
+                        <span className={styles.line}></span>
                         <h2 className={styles.login}>Login</h2>
                         <form className={styles.login_form} onSubmit={loginHandler}>
                             <div className={styles.elements}>
-                                <label className={styles.desc} htmlFor="username">Username</label>
-                                <input className={styles.box} type="text" name="username" ref={userNameInputRef}></input>
+                                <label className={styles.desc} htmlFor="email">Email</label>
+                                <input className={styles.box} type="text" name="email" ref={emailInputRef}></input>
                             </div>
 
                             <div className={styles.elements}>
@@ -106,6 +122,7 @@ const Login = (props) => {
             {user && (
                 <>
                     <div className={styles.container}>
+                        <span className={styles.line}></span>
                         <h2 className={styles.login}>Login</h2>
                         <form className={styles.login_form} onSubmit={twoFactorHandler}>
                             <div className={styles.elements}>
