@@ -8,6 +8,12 @@ const Navbar = (props) => {
         <>
             <div className={styles.navbar}>
                 <a href='/'><img src={logo} className={styles.pic}></img></a>
+                <div className={styles['line-container']}>
+                    <div className={`${styles['line']} ${styles['line-1']}`}></div>
+                    <div className={`${styles['line']} ${styles['line-2']}`}></div>
+                    <div className={`${styles['line']} ${styles['line-3']}`}></div>
+                </div>
+
                 <div>
                     {elements && elements.map(element => {
                         if (!element.click) {

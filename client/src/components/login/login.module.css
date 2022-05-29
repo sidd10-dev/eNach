@@ -52,6 +52,10 @@
     align-items: center;
 }
 
+.elements label {
+    margin-top: 3%;
+}
+
 .desc{
     margin-right: 2rem;
     font-weight: 200;

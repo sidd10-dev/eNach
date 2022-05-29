@@ -5,6 +5,7 @@
     background-color: rgb(0, 0, 0);
     position: fixed;
     top: 0;
+    z-index: 100;
     left: 0;
     padding: 0.6rem;
 
@@ -81,6 +82,26 @@
 .ele:hover:after {
     transform: scaleX(1);
     border-radius: 5rem;
+}
+
+.line {
+    opacity: 0;
+}
+
+@media (max-width: 500px) {
+    .line {
+        opacity: 1;
+        background-color: red;
+        width: 1rem;
+        height: 1rem;
+        margin: 1rem;
+    }
+    .ele {
+        opacity: 0;
+    }
+    .eleClick {
+        opacity: 0;
+    }
 }
 
 /* end of Navbar */

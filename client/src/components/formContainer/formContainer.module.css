@@ -1,49 +1,87 @@
+.heading{
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2rem;
+    /* text-shadow: 0.5rem 0.5rem 3rem black; */
+}
+
+.req{
+    color: red;
+}
+
 .container {
     width: 80%;
-    border-top: solid 0.5rem #000;
-    padding: 2rem;
-    background-color: rgb(247, 243, 243);
+    background-color: white;
     justify-content: center;
     align-items: center;
+
+    position: relative;
+
+    padding: 2rem;
+    margin: 5rem 0;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 0.5);
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 242, 255);
+    height: 0.25rem;
+    width: 100%;
+    transform: scaleX(0);
+    /* border-radius: 5%; */
+    transition: 1s all;
+}
+
+.container:hover .line{
+    transform: scaleX(1);
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .input-block-container {
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    /* justify-content: center; */
     /* align-items: center; */
     /* border-top: solid 0.5rem #000; */
 }
 
-.form-container {
-    width: 100%;
+.left-container {
+    width: 50%;
+
+    /* border: black solid; */
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
-}
-
-.left-container {
-    margin-left: 0;
-    width: 50%;
-    padding: 0.5rem;
-    padding-left: 1.5rem;
 }
 
 .right-container {
-    margin-right: 0;
     width: 50%;
-    padding: 0.5rem;
-    padding-left: 1.5rem;
+
+    /* border: black solid; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .input-container {
     display: flex;
     flex-direction: column;
-    width: 100%;
-    align-items: flex-start;
+    width: 80%;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 1.5rem;
+
+    /* border: black solid; */
 }
 
 label {
@@ -53,8 +91,7 @@ label {
 }
 
 input {
-    font-size: 1.25rem;
-    margin-bottom: 1rem;
+    font-size: 1rem;
     width: 75%;
     height: 1.5rem;
     outline: none;
@@ -62,17 +99,77 @@ input {
     /* border: none; */
 }
 
-select {
+.desc {
+    font-size: 1.25rem;
+    display: flex;
+    align-self: flex-start;
+    margin-left: 3.4vw;
+}
+
+.box {
+    font-size: 1.25rem;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+    width: 75%;
+    height: 1.5rem;
+    outline: none;
+    padding: 0.5rem;
+
+    border: none;
+    border-bottom: grey solid;
+    transition: 0.3s all;
+    /* border-top: grey solid; */
+}
+
+.box:focus{
+    border-bottom: rgb(0, 242, 255) solid;
+    transform: scaleX(1);
+}
+
+.selectbox {
     font-size: 1.1rem;
     margin-bottom: 1rem;
     width: 75%;
     height: 2.75rem;
     outline: none;
     padding: 0.5rem;
+    transition: 0.3s all;
+    border: grey solid;
+    scroll-behavior: smooth;
+}
+
+.selectbox:focus{
+    border: rgb(0, 242, 255) solid;
+}
+
+.selected {
+    background-color: black;
+    color: red;
 }
 
 option {
-    font-size: 1.1rem;
+    font-size: 1.2rem;
+    background-color: rgb(151, 150, 150);
+    color: white;
+}
+
+.btn{
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 5rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 0.5);
+}
+
+.arrow{
+    margin-left: 5px;
+    font-size: 14px;
 }
 
 .schedule {
