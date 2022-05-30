@@ -76,9 +76,10 @@ app.use(session({
 
 app.get('/api/fetchBanks', async (req, res) => {
     const ip = requestIp.getClientIp(req)
+    // console.log(req.session.user)
     try {
         const banks = await axios.get("https://enachuat.npci.org.in:8086/apiservices_new/getLiveBankDtls")
-        logger.info(JSON.stringify({ msg: "Request for aes256 Encryption", requestBy: JSON.stringify(req.session.user), ip }))
+        logger.info(JSON.stringify({ msg: "Request to Fetch Bank Data", requestBy: JSON.stringify(req.session.user), ip }))
         return res.send(banks.data.liveBankList)
     } catch (e) {
         logger.error(JSON.stringify(e.message))
@@ -232,9 +233,10 @@ app.post('/api/2falogin', (req, res) => {
 
 app.get('/api/logout', (req,res) => {
     const ip = requestIp.getClientIp(req)
-    const email = req.session.email
-    const name = req.session.name 
-    logger.info(JSON.stringify({ msg: "User has logged out of the system", user: JSON.stringify({ email,name }), ip }))
+    console.log(req.session.user)
+    // const email = req.session.user.email
+    // const name = req.session.user.name 
+    logger.info(JSON.stringify({ msg: "User has logged out of the system", ip }))
     res.clearCookie("userToken")
     res.send("Successfully logged out")
 })

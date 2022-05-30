@@ -85,16 +85,30 @@ const TwoFactor = (props) => {
             {/* <h2>Two Factor Authentication Registration</h2> */}
             {isValidUser && (
                 <>
-                    <h2>Set Up 2FA</h2>
-                    <div>
-                        <img src={qr} className={styles.qr}></img>
-                        <form onSubmit={twoFactorSubmitHandler}>
-                            {/* <label htmlFor="email">email</label>
-                            <input type="text" name="email" ref={emailInputRef}></input> */}
-                            <label htmlFor="2FACode">2FA Code</label>
-                            <input type="text" name="2FACode" ref={codeInputRef}></input>
-                            <button type="submit">Submit</button>
-                        </form>
+                    <div className={styles.container2}>
+                        <span className={styles.line}></span>
+                        <h2 className={styles.head}>Set Up 2FA</h2>
+                        <div className={styles.split}>
+                            <img src={qr} className={styles.qr}></img>
+                            <div className={styles.main}>
+                                <div className={styles.tnc}>
+                                    <h3 className={styles.inst}>Instructions: </h3>
+                                    <p className={styles.instp}>
+                                    1. Scan the QR Code with any Authenticator App <br />
+                                    &nbsp;&nbsp;&nbsp;(for eg. Google Authenticator, Microsoft Authenticator).
+                                    </p>
+                                    <p className={styles.instp}>2. Enter the Code here To Finish Registration.</p>
+                                    <p className={styles.instp}>Note: The Code is Refreshed Every Minute.</p>
+                                </div>
+                                <form onSubmit={twoFactorSubmitHandler} className = {styles.twoform}>
+                                    {/* <label htmlFor="email">email</label>
+                                    <input type="text" name="email" ref={emailInputRef}></input> */}
+                                    <label className={styles.desc2} htmlFor="2FACode">2FA Code</label>
+                                    <input className={styles.box2} type="text" name="2FACode" ref={codeInputRef}></input>
+                                </form>
+                                <button className={`${styles.btn} ${styles.btn2}`} type="submit">Submit<FontAwesomeIcon icon={faArrowRight} className={styles.arrow} /></button>
+                            </div>
+                        </div>
                     </div>
                 </>
             )}

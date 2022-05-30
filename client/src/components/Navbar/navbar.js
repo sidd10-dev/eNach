@@ -1,20 +1,32 @@
+import {useState} from 'react'
 import styles from './navbar.module.css'
 import React from 'react'
 import logo from './img/img1.jpg'
 
 const Navbar = (props) => {
     const elements = props.elements
+
+    const [toggle, setToggle]= useState(false) 
+
+    function togglebutton (){
+        if(toggle)
+            setToggle(false)
+        else    
+            setToggle(true)
+    }
+
     return (
         <>
             <div className={styles.navbar}>
-                <a href='/'><img src={logo} className={styles.pic}></img></a>
-                <div className={styles['line-container']}>
-                    <div className={`${styles['line']} ${styles['line-1']}`}></div>
-                    <div className={`${styles['line']} ${styles['line-2']}`}></div>
-                    <div className={`${styles['line']} ${styles['line-3']}`}></div>
+                <div>
+                    <a href='/'><img src={logo} className={styles.pic}></img></a>
+                    <div className={styles['line-container']} onClick= {togglebutton}>
+                        <div className={`${styles['line']} ${styles['line-1']} ${toggle ? styles.change: ''}`}></div>
+                        <div className={`${styles['line']} ${styles['line-2']} ${toggle ? styles.change: ''}`}></div>
+                    </div>
                 </div>
 
-                <div>
+                <div className= {`${styles.navbarele} ${toggle ? styles.change: ''}`}>
                     {elements && elements.map(element => {
                         if (!element.click) {
                             return (

@@ -1,4 +1,4 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,23 +28,23 @@
     transition: 1s all;
 }
 
-.container:hover .line{
+.container:hover .line {
     transform: scaleX(1);
 }
 
-.login{
+.login {
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.login_form{
+.login_form {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
-.elements{
+.elements {
     /* border: solid black; */
     width: 100%;
     display: flex;
@@ -56,12 +56,12 @@
     margin-top: 3%;
 }
 
-.desc{
+.desc {
     margin-right: 2rem;
     font-weight: 200;
 }
 
-.box{
+.box {
     width: 20rem;
     height: 1rem;
     border-radius: 5rem;
@@ -71,17 +71,17 @@
     transition: 0.1s all;
 }
 
-.box:focus{
+.box:focus {
     border: black solid;
     transition: 0.5s all;
 }
 
-.box:hover{
+.box:hover {
     border: black solid;
     transition: 0.5s all;
 }
 
-.btn{
+.btn {
     margin-top: 1rem;
     width: 8rem;
     height: 2rem;
@@ -96,7 +96,233 @@
     box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 0.5);
 }
 
-.arrow{
+.arrow {
     margin-left: 5px;
     font-size: 15px;
+}
+
+@media (max-width: 850px) {
+    .container {
+        width: 50%;
+    }
+}
+
+@media (max-width: 660px) {
+    .container {
+        width: 40%;
+        height: 15rem;
+        /* padding: 1rem; */
+    }
+
+    .desc {
+        font-size: 1rem;
+        margin-top: 1.5rem;
+    }
+
+    .box {
+        width: 15rem;
+        height: 0.5rem;
+    }
+
+    .btn {
+        margin-top: 0.5rem;
+        width: 6rem;
+        height: 1.5rem;
+        font-size: 0.62rem;
+    }
+
+    .arrow {
+        margin-left: 5px;
+        font-size: 10px;
+    }
+
+    .login {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        width: 6rem;
+        height: 12rem;
+        /* padding: 1rem; */
+    }
+
+    .elements {
+        /* border: solid red; */
+        height: 2rem;
+    }
+
+    .desc {
+        /* border: solid red; */
+        font-size: 1rem;
+        margin-right: 1.5rem;
+    }
+
+    .box {
+        /* border: solid red; */
+        width: 12rem;
+        margin: 0;
+        height: 0.1rem;
+        font-size: 0.75rem;
+    }
+
+    .btn {
+        margin-top: 0.5rem;
+        padding: 0.7rem;
+        width: 4rem;
+        height: 0.1rem;
+        font-size: 0.5rem;
+    }
+
+    .arrow {
+        margin-left: 5px;
+        font-size: 7.5px;
+    }
+
+    .login {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        margin-top: 13rem;
+        width: 1rem;
+        height: 9rem;
+        /* padding: 1rem; */
+    }
+
+    .elements {
+        /* border: solid red; */
+        height: 1.5rem;
+    }
+
+    .desc {
+        /* border: solid red; */
+        font-size: 0.75rem;
+        transform: translateY(0.25rem);
+        margin-right: 1.5rem;
+    }
+
+    .box {
+        /* border: solid red; */
+        width: 10rem;
+        margin: 0;
+        padding: 0.3rem;
+        height: 0.1rem;
+        font-size: 0.5rem;
+    }
+
+    .btn {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        width: 3rem;
+        height: 0.1rem;
+        font-size: 5px;
+    }
+
+    .arrow {
+        margin-left: 3px;
+        font-size: 5px;
+    }
+
+    .login {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 350px) {
+    .container {
+        width: 17.5rem;
+        height: 7rem;
+        padding: 1rem;
+    }
+
+    .elements {
+        /* border: solid red; */
+        height: 1.5rem;
+    }
+
+    .desc {
+        /* border: solid red; */
+        font-size: 0.75rem;
+        transform: translateY(0.25rem);
+        margin-right: 1.5rem;
+    }
+
+    .box {
+        /* border: solid red; */
+        width: 10rem;
+        margin: 0;
+        padding: 0.3rem;
+        height: 0.1rem;
+        font-size: 0.5rem;
+    }
+
+    .btn {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        width: 3rem;
+        height: 0.1rem;
+        font-size: 5px;
+    }
+
+    .arrow {
+        margin-left: 3px;
+        font-size: 5px;
+    }
+
+    .login {
+        font-size: 0.75rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        width: 15rem;
+        height: 7rem;
+        padding: 1rem;
+    }
+    /* .login_form {
+        border: solid red;
+    } */
+
+    .elements {
+        /* border: solid red; */
+        height: 1.5rem;
+    }
+
+    .desc {
+        /* border: solid red; */
+        font-size: 0.75rem;
+        transform: translateY(0.25rem);
+        margin-right: 1.5rem;
+    }
+
+    .box {
+        /* border: solid red; */
+        width: 7rem;
+        margin: 0;
+        padding: 0.3rem;
+        height: 0.1rem;
+        font-size: 0.5rem;
+    }
+
+    .btn {
+        margin-top: 0.5rem;
+        padding: 0.5rem;
+        width: 3rem;
+        height: 0.1rem;
+        font-size: 5px;
+    }
+
+    .arrow {
+        margin-left: 3px;
+        font-size: 5px;
+    }
+
+    .login {
+        font-size: 0.75rem;
+    }
 }

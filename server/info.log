@@ -251,3 +251,39 @@
 {"level":"info","message":"{\"msg\":\"Request for aes256 Encryption\",\"requestBy\":\"{\\\"email\\\":\\\"sidd.r2003@gmail.com\\\",\\\"name\\\":\\\"sid\\\"}\",\"ip\":\"::1\"}","timestamp":"2022-05-27T11:26:03.424Z"}
 {"level":"info","message":"{\"msg\":\"User has logged out of the system\",\"user\":\"{}\",\"ip\":\"::1\"}","timestamp":"2022-05-27T11:35:10.078Z"}
 {"level":"info","message":"{\"msg\":\"User has scanned QR\",\"ip\":\"::1\"}","timestamp":"2022-05-27T11:44:45.864Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-30T05:18:06.253Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login. Valid Credentials\",\"requestBy\":\"sidd.r2003@gmail.com\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:18:22.664Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login(2FA Code). Valid Code Entered. User Logged In\",\"requestBy\":\"sidd.r2003@gmail.com\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:18:35.177Z"}
+{"level":"info","message":"{\"msg\":\"Request for aes256 Encryption\",\"requestBy\":\"{\\\"email\\\":\\\"sidd.r2003@gmail.com\\\",\\\"name\\\":\\\"sid\\\"}\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:18:38.147Z"}
+{"level":"info","message":"{\"msg\":\"User has logged out of the system\",\"user\":\"{}\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:19:17.349Z"}
+{"level":"info","message":"{\"msg\":\"User has scanned QR\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:19:30.133Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login. Valid Credentials\",\"requestBy\":\"sidd.r2003@gmail.com\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:21:29.114Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login(2FA Code). Valid Code Entered. User Logged In\",\"requestBy\":\"sidd.r2003@gmail.com\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:21:38.519Z"}
+{"level":"info","message":"{\"msg\":\"Request for aes256 Encryption\",\"requestBy\":\"{\\\"email\\\":\\\"sidd.r2003@gmail.com\\\",\\\"name\\\":\\\"sid\\\"}\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:21:41.021Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-30T05:23:29.912Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-30T05:24:02.571Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login. Valid Credentials\",\"requestBy\":\"sidd.r2003@gmail.com\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:24:44.584Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login(2FA Code). Valid Code Entered. User Logged In\",\"requestBy\":\"sidd.r2003@gmail.com\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:24:49.407Z"}
+{"level":"info","message":"{\"msg\":\"Request for aes256 Encryption\",\"requestBy\":\"{\\\"email\\\":\\\"sidd.r2003@gmail.com\\\",\\\"name\\\":\\\"sid\\\"}\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:24:52.303Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-30T05:25:20.148Z"}
+{"level":"info","message":"{\"msg\":\"User has logged out of the system\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:25:36.562Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-30T05:26:07.932Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login. Valid Credentials\",\"requestBy\":\"sidd.r2003@gmail.com\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:26:14.141Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login(2FA Code). Valid Code Entered. User Logged In\",\"requestBy\":\"sidd.r2003@gmail.com\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:26:18.381Z"}
+{"level":"info","message":"{\"msg\":\"Request for aes256 Encryption\",\"requestBy\":\"{\\\"email\\\":\\\"sidd.r2003@gmail.com\\\",\\\"name\\\":\\\"sid\\\"}\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:26:21.399Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-30T05:26:34.843Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-30T05:27:00.063Z"}
+{"level":"info","message":"{\"msg\":\"Request for aes256 Encryption\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:27:07.284Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login. Valid Credentials\",\"requestBy\":\"sidd.r2003@gmail.com\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:27:08.949Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login(2FA Code). Valid Code Entered. User Logged In\",\"requestBy\":\"sidd.r2003@gmail.com\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:27:13.689Z"}
+{"level":"info","message":"{\"msg\":\"Request for aes256 Encryption\",\"requestBy\":\"{\\\"email\\\":\\\"sidd.r2003@gmail.com\\\",\\\"name\\\":\\\"sid\\\"}\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:27:17.932Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-30T05:27:30.723Z"}
+{"level":"info","message":"Connected to DB","timestamp":"2022-05-30T05:29:08.015Z"}
+{"level":"info","message":"{\"msg\":\"Request to Fetch Bank Data\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:29:22.542Z"}
+{"level":"info","message":"{\"msg\":\"User has scanned QR\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:38:26.312Z"}
+{"level":"info","message":"{\"msg\":\"User has scanned QR\",\"ip\":\"::1\"}","timestamp":"2022-05-30T05:40:14.794Z"}
+{"level":"info","message":"{\"msg\":\"Attempt to login. Valid Credentials\",\"requestBy\":\"sidd.r2003@gmail.com\",\"ip\":\"::1\"}","timestamp":"2022-05-30T06:17:13.317Z"}
+{"level":"info","message":"{\"msg\":\"User has scanned QR\",\"ip\":\"::1\"}","timestamp":"2022-05-30T06:25:19.298Z"}
+{"level":"info","message":"{\"msg\":\"User has scanned QR\",\"ip\":\"::1\"}","timestamp":"2022-05-30T06:26:36.990Z"}
+{"level":"info","message":"{\"msg\":\"User has scanned QR\",\"ip\":\"::1\"}","timestamp":"2022-05-30T06:49:06.080Z"}
+{"level":"info","message":"{\"msg\":\"User has scanned QR\",\"ip\":\"::1\"}","timestamp":"2022-05-30T06:55:08.571Z"}
