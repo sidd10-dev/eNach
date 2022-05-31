@@ -29,7 +29,7 @@ const Login = (props) => {
     const validateForm = (email, password) => {
         if (email.length == 0)
             return { msg: "Email Id Can't be Empty!", valid: false }
-        if(!validator.isEmail(email))
+        if (!validator.isEmail(email))
             return { msg: "Invalid Email Id", valid: false }
         if (password.length == 0)
             return { msg: "Password Can't be Empty!", valid: false }
@@ -57,19 +57,30 @@ const Login = (props) => {
         }
     }
 
+    const twoFactorFormValid = (code) => {
+        if (validator.isNumeric(code))
+            return true
+        else {
+            setError({msg: "Invalid Token! Token should contain only Numeric values!"})
+            return false
+        }
+    }
+
     const twoFactorHandler = (event) => {
         event.preventDefault()
         const twoFactorCode = codeInputRef.current.value
-
-        axios.post("http://localhost:3001/api/2falogin", {
-            twoFactorCode,
-            user
-        }).then(res => {
-            if (res.data === true)
-                navigate('/eMandate')
-        }).catch(er => {
-            setError({ msg: er.response.data })
-        })
+        const valid = twoFactorFormValid(twoFactorCode)
+        if (valid) {
+            axios.post("http://localhost:3001/api/2falogin", {
+                twoFactorCode,
+                user
+            }).then(res => {
+                if (res.data === true)
+                    navigate('/eMandate')
+            }).catch(er => {
+                setError({ msg: er.response.data })
+            })
+        }
     }
 
     useEffect(() => {

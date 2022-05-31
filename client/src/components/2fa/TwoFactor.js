@@ -8,6 +8,7 @@ import styles from './TwoFactor.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Navbar from "../Navbar/navbar";
+import validator from 'validator'
 
 const TwoFactor = (props) => {
     const [isValidUser, setIsValidUser] = useState(false)
@@ -46,23 +47,36 @@ const TwoFactor = (props) => {
         })
     }
 
+    const twoFactorFormValid = (code) => {
+        if (validator.isNumeric(code))
+            return true
+        else {
+            setError("Invalid Token! Token should contain only Numeric values!")
+            return false
+        }
+    }
+
     const twoFactorSubmitHandler = (event) => {
         event.preventDefault()
         const code = codeInputRef.current.value
-        console.log(email)
-        axios.post("http://localhost:3001/api/2FAregister", {
-            email,
-            code,
-            secret
-        }).then(res => {
-            if (res.data.registrationComplete) {
-                navigate('/')
-            }
-        }).catch(e => {
-            setError({ msg: e.response.data || e.msg })
-            console.log(e)
-        })
-        setIsValidUser(true)
+        const valid = twoFactorFormValid(code)
+        // console.log(email)
+        if (valid) {
+            axios.post("http://localhost:3001/api/2FAregister", {
+                email,
+                code,
+                secret
+            }).then(res => {
+                if (res.data.registrationComplete) {
+                    navigate('/')
+                }
+            }).catch(e => {
+                setError({ msg: e.response.data || e.msg })
+                console.log(e)
+            })
+            setIsValidUser(true)
+        }
+
     }
 
     return (
@@ -70,7 +84,7 @@ const TwoFactor = (props) => {
             {error && (
                 <ErrorModal errorMsg={error.msg} onCancelError={() => setError(null)}></ErrorModal>
             )}
-            <Navbar elements = {[
+            <Navbar elements={[
                 {
                     name: "Login",
                     link: "",
@@ -94,13 +108,13 @@ const TwoFactor = (props) => {
                                 <div className={styles.tnc}>
                                     <h3 className={styles.inst}>Instructions: </h3>
                                     <p className={styles.instp}>
-                                    1. Scan the QR Code with any Authenticator App <br />
-                                    &nbsp;&nbsp;&nbsp;(for eg. Google Authenticator, Microsoft Authenticator).
+                                        1. Scan the QR Code with any Authenticator App <br />
+                                        &nbsp;&nbsp;&nbsp;(for eg. Google Authenticator, Microsoft Authenticator).
                                     </p>
                                     <p className={styles.instp}>2. Enter the Code here To Finish Registration.</p>
                                     <p className={styles.instp}>Note: The Code is Refreshed Every Minute.</p>
                                 </div>
-                                <form onSubmit={twoFactorSubmitHandler} className = {styles.twoform}>
+                                <form onSubmit={twoFactorSubmitHandler} className={styles.twoform}>
                                     {/* <label htmlFor="email">email</label>
                                     <input type="text" name="email" ref={emailInputRef}></input> */}
                                     <label className={styles.desc2} htmlFor="2FACode">2FA Code</label>

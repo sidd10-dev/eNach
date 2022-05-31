@@ -103,6 +103,8 @@ const FormContainer = (props) => {
         let Filler9 = filler1Ref.current.value
         let Filler10 = filler1Ref.current.value
 
+        const valid = isFormValid(Customer_Mobile, Customer_TelphoneNo, Customer_EmailId,Customer_AccountNo, Customer_ExpiryDate, Customer_StartDate, Customer_DebitAmount, Customer_MaxAmount, )
+
         axios.get('http://localhost:3001/api/getCompanyCreds').then(res => {
             UtilCode = res.data.UtilCode
             Merchant_Category_Code = res.data.CategoryCode
