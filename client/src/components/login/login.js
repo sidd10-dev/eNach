@@ -28,11 +28,11 @@ const Login = (props) => {
 
     const validateForm = (email, password) => {
         if (email.length == 0)
-            return { msg: "Email Id Can't be Empty!", valid: false }
+            return { message: "Email Id Can't be Empty!", valid: false }
         if (!validator.isEmail(email))
-            return { msg: "Invalid Email Id", valid: false }
+            return { message: "Invalid Email Id", valid: false }
         if (password.length == 0)
-            return { msg: "Password Can't be Empty!", valid: false }
+            return { message: "Password Can't be Empty!", valid: false }
         return { valid: true }
     }
 
@@ -50,10 +50,10 @@ const Login = (props) => {
             }).then(res => {
                 setUser(res.data.user)
             }).catch(er => {
-                setError({ msg: er.response.data })
+                setError({ message: er.response.data })
             })
         } else {
-            setError({ msg: formValid.msg })
+            setError({ message: formValid.message })
         }
     }
 
@@ -61,7 +61,7 @@ const Login = (props) => {
         if (validator.isNumeric(code))
             return true
         else {
-            setError({msg: "Invalid Token! Token should contain only Numeric values!"})
+            setError({message: "Invalid Token! Token should contain only Numeric values!"})
             return false
         }
     }
@@ -78,7 +78,7 @@ const Login = (props) => {
                 if (res.data === true)
                     navigate('/eMandate')
             }).catch(er => {
-                setError({ msg: er.response.data })
+                setError({ message: er.response.data })
             })
         }
     }
@@ -95,7 +95,7 @@ const Login = (props) => {
     return (
         <>
             {error && (
-                <ErrorModal errorMsg={error.msg} onCancelError={() => setError(null)}></ErrorModal>
+                <ErrorModal errormessage={error.message} onCancelError={() => setError(null)}></ErrorModal>
             )}
             <Navbar elements={[
                 {

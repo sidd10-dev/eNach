@@ -1,0 +1,165 @@
+.container{
+    width: 80vw;
+    height: auto;
+
+    margin: 5rem;
+    padding: 2rem 5vw;
+
+    background-color: white;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 0.5);
+    position: relative;
+
+    /* border: red solid; */
+}
+
+.line {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgb(0, 242, 255);
+    height: 0.25rem;
+    width: 100%;
+    transform: scaleX(0);
+    /* border-radius: 5%; */
+    transition: 1s all;
+}
+
+.container:hover .line{
+    transform: scaleX(1);
+}
+
+.log{
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+.filter{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    /* border: red solid; */
+}
+
+.icont{
+    width: 25rem;
+    text-align: start;
+    /* border: red solid; */
+}
+
+.desc{
+    /* text-transform: uppercase; */
+    font-size: 1rem;
+    font-weight: 200;
+    margin-right: 1rem;
+
+    /* border: red solid; */
+}
+
+.box {
+    font-size: 1rem;
+    width: 40%;
+    height: 1.5rem;
+    outline: none;
+    padding: 0.5rem;
+
+    border: none;
+    border-bottom: grey solid;
+    transition: 0.3s all;
+    /* border-top: grey solid; */
+    /* border: red solid; */
+}
+
+.box:focus{
+    border-bottom: rgb(0, 242, 255) solid;
+    transform: scaleX(1);
+}
+
+.underline{
+    width: 100%;
+    height: 0.1rem;
+    background-color: rgb(0, 242, 255);
+}
+
+.btn {
+    margin-top: 1rem;
+    width: 8rem;
+    height: 2rem;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    transition: 0.5s all;
+    border-radius: 5rem;
+    box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 0.5);
+}
+
+.icon {
+    margin-left: 5px;
+    font-size: 12px;
+}
+
+.columns{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    font-size: 1rem;
+}
+
+.id{
+    margin: 1rem 0 1rem 2rem;
+    width: 5vw;
+    /* border: red solid; */
+}
+
+.msg{
+    margin: 1rem 0;
+    width: 35vw;
+
+    /* border: red solid; */
+}
+
+.timestamp{
+    margin: 1rem 0;
+    width: 15vw;
+    
+    /* border: red solid; */
+}
+
+.user{
+    margin: 1rem 0;
+    width: 10vw;
+    
+    /* border: red solid; */
+}
+
+.ip{
+    margin: 1rem 2rem 1rem 0;
+    width: 5vw;
+
+    /* border: red solid; */
+}
+
+.rows{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    /* border: red solid; */
+}
+
+.contents{
+    font-size: 0.8rem;
+    font-weight: 300;
+
+    text-align: center;
+
+    /* border: red solid; */
+}

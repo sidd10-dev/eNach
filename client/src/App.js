@@ -6,6 +6,7 @@ import Login from './components/login/login';
 import TwoFactor from './components/2fa/TwoFactor'
 import Logout from './components/logout/logout';
 import {Routes, Route} from "react-router-dom";
+import Logs from './components/logs/logs';
 const axios = require('axios')
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path = "/" element = {<Login />}></Route>
         <Route path = "/logout" element = {<Logout />}></Route>
         <Route path = "/register2fa" element = {<TwoFactor />}></Route>
+        <Route path = "/logs" element = {<Logs />}></Route>
       </Routes>
     </div>
   );

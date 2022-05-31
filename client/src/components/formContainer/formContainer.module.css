@@ -18,7 +18,7 @@
     position: relative;
 
     padding: 2rem;
-    margin: 5rem 0;
+    margin: 8rem 0 4rem 0;
     box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 0.5);
 }
 
@@ -142,11 +142,6 @@ input {
     border: rgb(0, 242, 255) solid;
 }
 
-.selected {
-    background-color: black;
-    color: red;
-}
-
 option {
     font-size: 1.2rem;
     background-color: rgb(151, 150, 150);
@@ -174,4 +169,102 @@ option {
 
 .schedule {
     opacity: 0;
+}
+
+/* Responsive */
+
+@media (max-width: 1050px) {
+    .heading{
+        font-size: 1.5rem;
+        margin-top: -0.5rem;
+        /* text-shadow: 0.5rem 0.5rem 3rem black; */
+    }
+
+    .desc {
+        font-size: 0.9rem;
+        margin-left: 3.4vw;
+    }
+    
+    .box {
+        font-size: 0.9rem;
+        width: 70%;
+
+        margin-left: -0.4rem;
+        height: 0.5rem;
+
+        /* border: black solid; */
+    }
+
+    .selectbox {
+        font-size: 10px;
+
+        width: 70%;
+        height: 2rem;
+
+        margin-left: -1.5rem;
+    }
+
+    option {
+        font-size: 0.8rem;
+    }
+
+    .btn{
+        width: 5rem;
+        height: 1rem;
+        font-size: 0.5rem;
+
+        margin-top: -1rem;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .container {
+        width: 70%;
+    }
+    
+    .heading{
+        font-size: 1rem;
+        margin-top: -0.5rem;
+        /* text-shadow: 0.5rem 0.5rem 3rem black; */
+    }
+
+    .desc {
+        font-size: 0.5rem;
+        margin-left: 3.4vw;
+    }
+    
+    .box {
+        font-size: 0.5rem;
+        width: 60%;
+
+        margin-left: -0.3rem;
+        height: 0.5rem;
+
+        /* border: black solid; */
+    }
+    
+    .selectbox {
+        font-size: 8px;
+
+        width: 75%;
+        height: 1.3rem;
+
+        margin-left: 0.3rem;
+        padding: 0;
+    }
+
+    option {
+        font-size: 0.6rem;
+    }
+
+    .btn{
+        width: 5rem;
+        height: 1rem;
+        font-size: 0.5rem;
+    }
+    
+    .arrow{
+        font-size: 10px;
+    }
 }

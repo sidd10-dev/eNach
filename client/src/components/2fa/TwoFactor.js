@@ -42,7 +42,7 @@ const TwoFactor = (props) => {
             setQr(res.data.qr)
             // console.log(isValidUser)
         }).catch(e => {
-            setError({ msg: e.response.data.msg })
+            setError({ message: e.response.data.message })
             // console.log(e)
         })
     }
@@ -71,7 +71,7 @@ const TwoFactor = (props) => {
                     navigate('/')
                 }
             }).catch(e => {
-                setError({ msg: e.response.data || e.msg })
+                setError({ message: e.response.data || e.message })
                 console.log(e)
             })
             setIsValidUser(true)
@@ -82,7 +82,7 @@ const TwoFactor = (props) => {
     return (
         <>
             {error && (
-                <ErrorModal errorMsg={error.msg} onCancelError={() => setError(null)}></ErrorModal>
+                <ErrorModal errormessage={error.message} onCancelError={() => setError(null)}></ErrorModal>
             )}
             <Navbar elements={[
                 {

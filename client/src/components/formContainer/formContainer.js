@@ -8,6 +8,7 @@ import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Navbar from "../Navbar/navbar";
+import { sha256 } from 'js-sha256';
 
 const FormContainer = (props) => {
 
@@ -59,6 +60,10 @@ const FormContainer = (props) => {
         }).catch(e => console.log(e))
     }
 
+    const checkSumGenerate = () => {
+
+    }
+
     useEffect(() => {
         loginChecker()
         if (isLoggedIn)
@@ -70,12 +75,14 @@ const FormContainer = (props) => {
             navigate('/')
     }, [isLoggedIn])
 
+
+
     const formSubmitHandler = async (event) => {
         event.preventDefault()
 
-        let Merchant_Category_Code = ' '
-        let Short_Code = ' '
-        let UtilCode = ' '
+        let Merchant_Category_Code = ''
+        let Short_Code = ''
+        let UtilCode = ''
         let CheckSum = ''
         let Customer_Name = customerNameRef.current.value
         let Customer_TelphoneNo = customerTelephoneRef.current.value
@@ -94,21 +101,23 @@ const FormContainer = (props) => {
         let Channel = channelRef.current.value
         let Filler1 = filler1Ref.current.value
         let Filler2 = filler2Ref.current.value
-        let Filler3 = filler1Ref.current.value
-        let Filler4 = filler1Ref.current.value
-        let Filler5 = filler1Ref.current.value
-        let Filler6 = filler1Ref.current.value
-        let Filler7 = filler1Ref.current.value
-        let Filler8 = filler1Ref.current.value
-        let Filler9 = filler1Ref.current.value
-        let Filler10 = filler1Ref.current.value
+        let Filler3 = filler3Ref.current.value
+        let Filler4 = filler4Ref.current.value
+        let Filler5 = filler5Ref.current.value
+        let Filler6 = filler6Ref.current.value
+        let Filler7 = filler7Ref.current.value
+        let Filler8 = filler8Ref.current.value
+        let Filler9 = filler9Ref.current.value
+        let Filler10 = filler10Ref.current.value
 
-        const valid = isFormValid(Customer_Mobile, Customer_TelphoneNo, Customer_EmailId,Customer_AccountNo, Customer_ExpiryDate, Customer_StartDate, Customer_DebitAmount, Customer_MaxAmount, )
+        // const valid = isFormValid(Customer_Mobile, Customer_TelphoneNo, Customer_EmailId,Customer_AccountNo, Customer_ExpiryDate, Customer_StartDate, Customer_DebitAmount, Customer_MaxAmount, )
 
         axios.get('http://localhost:3001/api/getCompanyCreds').then(res => {
-            UtilCode = res.data.UtilCode
-            Merchant_Category_Code = res.data.CategoryCode
-            Short_Code = res.data.ShortCode
+            // console.log(res)
+            UtilCode += res.data[0].UtilCode
+            Merchant_Category_Code += res.data[0].CategoryCode
+            Short_Code += res.data[0].ShortCode
+            // console.log(res.data[0].UtilCode)
         })
 
         axios.post('http://localhost:3001/api/aes256encrypt', {
@@ -123,7 +132,7 @@ const FormContainer = (props) => {
         }).then(res => {
             console.log(res)
         }).catch(e => console.log(e))
-
+    
         axios.post('http://localhost:3001/api/sha256encrypt', {
             Customer_AccountNo,
             Customer_StartDate,
@@ -131,44 +140,48 @@ const FormContainer = (props) => {
             Customer_DebitAmount,
             Customer_MaxAmount
         }).then(res => {
-            console.log(res)
             CheckSum = res.data
         }).catch(e => console.log(e))
 
         const MsgId = uuid4()
+        let reqBody = {}
 
-        const reqBody = {
-            UtilCode,
-            Short_Code,
-            Merchant_Category_Code,
-            CheckSum,
-            MsgId,
-            Customer_Name,
-            Customer_TelphoneNo,
-            Customer_EmailId,
-            Customer_Mobile,
-            Customer_AccountNo,
-            Customer_StartDate,
-            Customer_ExpiryDate,
-            Customer_DebitAmount,
-            Customer_MaxAmount,
-            Customer_DebitFrequency,
-            Customer_SequenceType,
-            Customer_InstructedMemberId,
-            Customer_Reference1,
-            Customer_Reference2,
-            Channel,
-            Filler1,
-            Filler2,
-            Filler3,
-            Filler4,
-            Filler5,
-            Filler6,
-            Filler7,
-            Filler8,
-            Filler9,
-            Filler10,
-        }
+        setTimeout(function () {
+            reqBody = {
+                UtilCode,
+                Short_Code,
+                Merchant_Category_Code,
+                CheckSum,
+                MsgId,
+                Customer_Name,
+                Customer_TelphoneNo,
+                Customer_EmailId,
+                Customer_Mobile,
+                Customer_AccountNo,
+                Customer_StartDate,
+                Customer_ExpiryDate,
+                Customer_DebitAmount,
+                Customer_MaxAmount,
+                Customer_DebitFrequency,
+                Customer_SequenceType,
+                Customer_InstructedMemberId,
+                Customer_Reference1,
+                Customer_Reference2,
+                Channel,
+                Filler1,
+                Filler2,
+                Filler3,
+                Filler4,
+                Filler5,
+                Filler6,
+                Filler7,
+                Filler8,
+                Filler9,
+                Filler10,
+            }
+    
+            console.log(reqBody)
+        }, 500);
     }
 
     // const buttonChangeHandler = () => {

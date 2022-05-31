@@ -14,9 +14,11 @@ const ErrorModal = (props) => {
                                 Error!
                             </p>
                             <p className={styles.content}>
-                                {props.errorMsg}
+                                {props.errormessage}
                             </p>
-                            <Button type="button" onClick={props.onCancelError} className = {styles.okButton}>Ok!</Button>
+                            <div className={styles.btncont}>
+                                <Button type="button" onClick={props.onCancelError} className = {styles.okButton}>Ok!</Button>
+                            </div>
                         </div>
                     </div>,
                     document.getElementById('error-modal')
