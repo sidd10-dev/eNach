@@ -12,12 +12,14 @@ const twoFactor = require('node-2fa')
 const winston = require('winston')
 const mySQLTransport = require('winston-mysql')
 const requestIp = require('request-ip')
+require('dotenv').config()
 
 // Logger
 const options = {
-    host: 'localhost',
-    user: 'root',
-    password: '*sidd1005ha_2003',
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
     database: 'logs',
     table: 'logs',
     fields: { level: 'mylevel', meta: 'metadata', message: 'log', timestamp: 'addDate' },
@@ -40,16 +42,18 @@ const logger = newLogger()
 
 // Database
 const db = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "*sidd1005ha_2003",
-    database: "master_schema",
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
+    database: "eNach",
 })
 
 const logDb = mysql.createConnection({
-    host: "localhost",
-    user: "root",
-    password: "*sidd1005ha_2003",
+    host: process.env.DB_HOST,
+    port: process.env.DB_PORT,
+    user: process.env.DB_USER,
+    password: process.env.DB_PASSWORD,
     database: "logs",
 })
 
@@ -59,8 +63,8 @@ db.connect((err) => {
         logger.error(err.message)
         throw err
     }
-    console.log({message: "Connected to DB"})
-    logger.info({message: "Connected to DB", requestBy: "-"})
+    console.log({ message: "Connected to DB" })
+    logger.info({ message: "Connected to DB", requestBy: "-" })
 })
 
 logDb.connect((err) => {
@@ -70,7 +74,7 @@ logDb.connect((err) => {
         throw err
     }
     console.log("Connected to Log DB")
-    logger.info({message: "Connected to Log DB" , requestBy: "-"})
+    logger.info({ message: "Connected to Log DB", requestBy: "-" })
 })
 
 app = express()
@@ -125,7 +129,7 @@ app.get('/api/login', (req, res) => {
 })
 
 app.post('/api/verifyUser', (req, res) => {
-    // console.log(req.body)
+    console.log(req.body)
     // console.log(requestIp.getClientIp(req))
     const ip = requestIp.getClientIp(req)
     const q = `select * from admin where email = '${req.body.email}';`
@@ -137,6 +141,7 @@ app.post('/api/verifyUser', (req, res) => {
             }
 
             if (result.length > 0) {
+                console.log(result)
                 const comparePassword = await bcrypt.compare(req.body.password, result[0].password)
                 if (comparePassword) {
                     // console.log(req.body.name)
@@ -238,7 +243,7 @@ app.post('/api/2falogin', (req, res) => {
         if (match) {
             logger.info(({ message: "Attempt to login(2FA Code). Valid Code Entered. User Logged In", requestBy: req.body.user.email, ip }))
             const email = req.body.user.email
-            const name = req.body.user.name 
+            const name = req.body.user.name
             req.session.user = { email, name }
             // console.log(req.session.user)
             return res.send(true)
@@ -248,7 +253,7 @@ app.post('/api/2falogin', (req, res) => {
     })
 })
 
-app.get('/api/logout', (req,res) => {
+app.get('/api/logout', (req, res) => {
     const ip = requestIp.getClientIp(req)
     // console.log(req.session.user)
     // const email = req.session.user.email
@@ -275,16 +280,29 @@ app.get('/api/getCompanyCreds', (req, res) => {
 app.post('/api/getLogs', (req, res) => {
     const ip = requestIp.getClientIp(req)
     const q = "select * from logs where addDate >= ? and addDate<= ?;"
-    
+
     const start = req.body.startDate + ' 00:00:00'
     const end = req.body.endDate + ' 23:59:59'
-    logDb.query(q,[start,end],(err,result) => {
-        if(err) {
+    logDb.query(q, [start, end], (err, result) => {
+        if (err) {
             logger.error((err.message))
             return res.send({ error: err })
         }
         logger.info(({ message: "Log DB was accessed", requestBy: (req.session.user.email), ip }))
         return res.send(result)
+    })
+})
+
+app.get('/api/staff_status', (req, res) => {
+    const ip = requestIp.getClientIp(req)
+    const q = "select * from admin where email = ?"
+    db.query(q, req.session.user.email, function (err, result) {
+        if (err) {
+            logger.error(err.message)
+            return res.send({ error: err })
+        }
+        console.log(result)
+        return res.send({ staff_status: result[0].staff_status })
     })
 })
 

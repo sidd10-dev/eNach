@@ -27,6 +27,7 @@ const TwoFactor = (props) => {
     //     codeInputRef.current.value = ""
     // }
 
+
     const verifyFormHandler = (event) => {
         event.preventDefault()
         setemail(emailInputRef.current.value)

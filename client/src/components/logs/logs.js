@@ -33,14 +33,19 @@ const Log = (props) => {
     }
 
     const loginChecker = () => {
-        
+
     }
 
     useEffect(() => {
         axios.get('http://localhost:3001/api/login').then(res => {
             // console.log(res)
-            if(!res.data.isLoggedIn)
+            if (!res.data.isLoggedIn)
                 navigate('/')
+            axios.get('http://localhost:3001/api/staff_status').then(resp => {
+                console.log(resp)
+                if (!resp.data.staff_status)
+                    navigate('/eMandate')
+            }).catch(er => console.log(er))
         }).catch(e => console.log(e))
     }, [])
 

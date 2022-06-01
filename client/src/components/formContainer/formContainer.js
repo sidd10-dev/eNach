@@ -8,7 +8,7 @@ import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Navbar from "../Navbar/navbar";
-import { sha256 } from 'js-sha256';
+import ErrorModal from "../ErrorModal/ErrorModal";
 
 const FormContainer = (props) => {
 
@@ -43,6 +43,18 @@ const FormContainer = (props) => {
     // useState Hooks
     const [banks, setBanks] = useState()
     const [isLoggedIn, setIsLoggedIn] = useState(true)
+    const [navbarElements, setNavbarElements] = useState([
+        {
+            name: "Logout",
+            link: "logout",
+            click: false
+        },
+        {
+            name: "eMandate",
+            link: "eMandate",
+            click: true
+        }
+    ])
 
     const navigate = useNavigate()
 
@@ -66,8 +78,24 @@ const FormContainer = (props) => {
 
     useEffect(() => {
         loginChecker()
-        if (isLoggedIn)
+        if (isLoggedIn) {
             fetchBankScheduler()
+            axios.get('http://localhost:3001/api/staff_status').then(resp => {
+                if (resp.data.staff_status)
+                    setNavbarElements((prev) => {
+                        console.log([...prev, {
+                            name: "Logs",
+                            link: "logs",
+                            click: false
+                        }])
+                        return [...prev, {
+                            name: "Logs",
+                            link: "logs",
+                            click: false
+                        }]
+                    })
+            }).catch(er => console.log(er))
+        }
     }, [])
 
     useEffect(() => {
@@ -110,7 +138,6 @@ const FormContainer = (props) => {
         let Filler9 = filler9Ref.current.value
         let Filler10 = filler10Ref.current.value
 
-        // const valid = isFormValid(Customer_Mobile, Customer_TelphoneNo, Customer_EmailId,Customer_AccountNo, Customer_ExpiryDate, Customer_StartDate, Customer_DebitAmount, Customer_MaxAmount, )
 
         axios.get('http://localhost:3001/api/getCompanyCreds').then(res => {
             // console.log(res)
@@ -132,7 +159,7 @@ const FormContainer = (props) => {
         }).then(res => {
             console.log(res)
         }).catch(e => console.log(e))
-    
+
         axios.post('http://localhost:3001/api/sha256encrypt', {
             Customer_AccountNo,
             Customer_StartDate,
@@ -179,14 +206,10 @@ const FormContainer = (props) => {
                 Filler9,
                 Filler10,
             }
-    
+
             console.log(reqBody)
         }, 500);
     }
-
-    // const buttonChangeHandler = () => {
-    //     console.log(banks)
-    // }
 
     const jobs = [
         {
@@ -198,18 +221,8 @@ const FormContainer = (props) => {
 
     return (
         <>
-            <Navbar elements={[
-                {
-                    name: "Logout",
-                    link: "logout",
-                    click: false
-                },
-                {
-                    name: "eMandate",
-                    link: "eMandate",
-                    click: true
-                }
-            ]}></Navbar>
+            {/* <ErrorModal errormessage="Hello world"></ErrorModal> */}
+            <Navbar elements={navbarElements}></Navbar>
             <div className={styles.container}>
                 <form className={styles.formContainer} onSubmit={formSubmitHandler}>
                     <span className={styles.line}></span>
@@ -234,8 +247,6 @@ const FormContainer = (props) => {
                                 <label htmlFor="MsgID" className={`${styles['label']}`}>MsgId*</label>
                                 <input type="text" id="MsgID" name="MsgID" required ref={msgIdRef}></input>
                             </div> */}
-
-
 
                             <div className={`${styles['input-container']}`}>
                                 <label htmlFor="Customer_EmailId" className={styles.desc}>Customer Email Id<span className={styles.req}>*</span></label>

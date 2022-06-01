@@ -532,3 +532,153 @@
 {"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-05-31T12:34:13.367Z"}
 {"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-05-31T12:35:08.745Z"}
 {"ip":"::1","level":"info","message":"Log DB was accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-05-31T12:35:49.991Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T06:04:08.945Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T06:04:08.951Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T06:37:10.135Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T06:37:22.784Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T06:37:25.984Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-01T06:37:32.083Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Invalid Credentials","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:37:37.261Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:37:44.413Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:37:50.405Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:37:53.154Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T06:43:53.532Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T06:43:53.538Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T06:44:43.858Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T06:44:50.359Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T06:44:53.130Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-01T06:45:20.920Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:45:26.916Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:45:31.279Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:45:33.443Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:45:39.296Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:48:44.999Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:48:47.278Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:48:48.283Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:48:50.362Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:49:03.665Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:49:07.160Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:49:09.175Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:49:22.876Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:50:23.761Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:56:02.908Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T06:56:18.982Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-01T06:56:38.072Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T06:56:41.214Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T06:56:54.291Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T06:56:55.643Z"}
+{"ip":"::1","level":"info","message":"Log DB was accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T06:57:11.149Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T07:02:14.411Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T07:03:51.490Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T07:05:09.721Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-01T07:06:56.541Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T09:10:50.586Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T09:10:50.592Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T09:11:18.988Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T09:11:18.994Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T09:12:18.631Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T09:12:18.639Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:02:24.078Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:02:24.082Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:02:26.508Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:02:26.512Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:02:32.926Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:02:32.929Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:02:36.872Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:02:36.877Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:02:38.618Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:02:38.623Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:02:56.225Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:02:56.228Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:03:18.054Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:03:18.057Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:03:24.976Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:03:24.982Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:04:46.852Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:04:46.855Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:06:04.673Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:06:04.676Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:06:06.661Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:06:06.667Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:06:12.109Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:06:12.124Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:06:14.135Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:06:21.928Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:06:23.800Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:06:28.752Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:06:46.213Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:06:55.730Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:06:57.376Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:07:22.439Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:09:45.834Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:11:28.768Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:22:06.702Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:22:12.962Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:23:31.341Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:28:31.149Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:31:46.314Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:34:50.023Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:38:01.799Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:38:13.052Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:38:20.837Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:38:25.609Z"}
+{"level":"error","message":"ER_NOT_SUPPORTED_AUTH_MODE: Client does not support authentication protocol requested by server; consider upgrading MySQL client","timestamp":"2022-06-01T10:38:26.867Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:38:45.404Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:38:45.467Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:39:09.170Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:39:09.173Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:39:35.343Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:39:35.356Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:39:52.309Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:39:52.355Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:39:58.356Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:39:58.359Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:39:59.337Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:39:59.341Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:40:13.631Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:40:13.649Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:40:22.078Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:40:22.082Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:40:24.502Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:40:28.054Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:40:28.059Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:40:29.904Z"}
+{"level":"error","message":"ER_ACCESS_DENIED_ERROR: Access denied for user 'admin'@'106.198.11.133' (using password: YES)","timestamp":"2022-06-01T10:40:29.922Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:40:33.507Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:40:33.512Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:40:43.548Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:40:43.617Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-01T10:49:50.444Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-01T10:49:50.445Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-01T10:50:34.487Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-01T10:50:35.969Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-01T10:50:37.010Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:50:54.014Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:50:54.051Z"}
+{"ip":"::1","level":"info","message":"User has scanned QR","timestamp":"2022-06-01T10:50:54.602Z"}
+{"email":"sidd.r2003@gmail.com","ip":"::1","level":"info","message":"New User has registered for two factor authentication","timestamp":"2022-06-01T10:51:40.278Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:52:00.968Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:52:00.987Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:52:10.489Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:52:10.494Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:52:22.904Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:52:22.942Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T10:52:30.787Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T10:52:37.120Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T10:52:38.169Z"}
+{"ip":"::1","level":"info","message":"Log DB was accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T10:52:45.712Z"}
+{"ip":"::1","level":"info","message":"Log DB was accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T10:52:46.659Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:53:05.392Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:53:05.416Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:53:06.872Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:53:06.877Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-01T10:53:08.363Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:53:27.523Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:53:27.576Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:53:43.623Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:53:43.626Z"}
+{"ip":"::1","level":"info","message":"User has scanned QR","timestamp":"2022-06-01T10:53:51.352Z"}
+{"email":"nith@gmail.com","ip":"::1","level":"info","message":"New User has registered for two factor authentication","timestamp":"2022-06-01T10:54:32.779Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"nith@gmail.com","timestamp":"2022-06-01T10:54:49.391Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"nith@gmail.com","timestamp":"2022-06-01T10:54:55.344Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T10:54:57.356Z"}
