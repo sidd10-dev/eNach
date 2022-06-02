@@ -202,14 +202,14 @@ app.post('/api/2FAregister', async (req, res) => {
 app.post('/api/login', (req, res) => {
     const ip = requestIp.getClientIp(req)
     const q = `select * from admin where email = '${req.body.email}';`
-    // console.log(req.body)
+    console.log(req.body)
     db.query(q, async (err, result) => {
         if (err) {
             // console.log(err)
             logger.error((err.message))
             return res.send({ error: err })
         }
-        // console.log(result)
+        console.log(result)
         if (result.length > 0) {
             const comparePassword = await bcrypt.compare(req.body.password, result[0].password)
             if (comparePassword) {

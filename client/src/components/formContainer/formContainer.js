@@ -8,7 +8,7 @@ import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowRight } from '@fortawesome/free-solid-svg-icons'
 import Navbar from "../Navbar/navbar";
-import ErrorModal from "../ErrorModal/ErrorModal";
+import TNC from "../TNC/tnc";
 
 const FormContainer = (props) => {
 
@@ -43,6 +43,7 @@ const FormContainer = (props) => {
     // useState Hooks
     const [banks, setBanks] = useState()
     const [isLoggedIn, setIsLoggedIn] = useState(true)
+    const [accept, setAccept] = useState(false)
     const [navbarElements, setNavbarElements] = useState([
         {
             name: "Logout",
@@ -57,7 +58,6 @@ const FormContainer = (props) => {
     ])
 
     const navigate = useNavigate()
-
     const fetchBankScheduler = () => {
         axios.get('http://localhost:3001/api/fetchBanks').then(res => {
             // console.log(res.data)
@@ -72,8 +72,8 @@ const FormContainer = (props) => {
         }).catch(e => console.log(e))
     }
 
-    const checkSumGenerate = () => {
-
+    const tncHandler = () => {
+        setAccept(true)
     }
 
     useEffect(() => {
@@ -83,16 +83,22 @@ const FormContainer = (props) => {
             axios.get('http://localhost:3001/api/staff_status').then(resp => {
                 if (resp.data.staff_status)
                     setNavbarElements((prev) => {
-                        console.log([...prev, {
-                            name: "Logs",
-                            link: "logs",
-                            click: false
-                        }])
-                        return [...prev, {
-                            name: "Logs",
-                            link: "logs",
-                            click: false
-                        }]
+                        return [
+                            {
+                                name: "Logout",
+                                link: "logout",
+                                click: false
+                            },
+                            {
+                                name: "eMandate",
+                                link: "eMandate",
+                                click: true
+                            },
+                            {
+                                name: "Logs",
+                                link: "logs",
+                                click: false
+                            }]
                     })
             }).catch(er => console.log(er))
         }
@@ -102,8 +108,6 @@ const FormContainer = (props) => {
         if (!isLoggedIn)
             navigate('/')
     }, [isLoggedIn])
-
-
 
     const formSubmitHandler = async (event) => {
         event.preventDefault()
@@ -138,6 +142,7 @@ const FormContainer = (props) => {
         let Filler9 = filler9Ref.current.value
         let Filler10 = filler10Ref.current.value
 
+        // const valid = isFormValid(Customer_Mobile, Customer_TelphoneNo, Customer_EmailId,Customer_AccountNo, Customer_ExpiryDate, Customer_StartDate, Customer_DebitAmount, Customer_MaxAmount, )
 
         axios.get('http://localhost:3001/api/getCompanyCreds').then(res => {
             // console.log(res)
@@ -211,6 +216,10 @@ const FormContainer = (props) => {
         }, 500);
     }
 
+    // const buttonChangeHandler = () => {
+    //     console.log(banks)
+    // }
+
     const jobs = [
         {
             fn: fetchBankScheduler,
@@ -221,8 +230,15 @@ const FormContainer = (props) => {
 
     return (
         <>
-            {/* <ErrorModal errormessage="Hello world"></ErrorModal> */}
             <Navbar elements={navbarElements}></Navbar>
+
+            {!accept && (
+                <TNC onClick={tncHandler}>
+                </TNC>
+            )
+
+            }
+
             <div className={styles.container}>
                 <form className={styles.formContainer} onSubmit={formSubmitHandler}>
                     <span className={styles.line}></span>
@@ -247,6 +263,8 @@ const FormContainer = (props) => {
                                 <label htmlFor="MsgID" className={`${styles['label']}`}>MsgId*</label>
                                 <input type="text" id="MsgID" name="MsgID" required ref={msgIdRef}></input>
                             </div> */}
+
+
 
                             <div className={`${styles['input-container']}`}>
                                 <label htmlFor="Customer_EmailId" className={styles.desc}>Customer Email Id<span className={styles.req}>*</span></label>

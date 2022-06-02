@@ -682,3 +682,20 @@
 {"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"nith@gmail.com","timestamp":"2022-06-01T10:54:49.391Z"}
 {"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"nith@gmail.com","timestamp":"2022-06-01T10:54:55.344Z"}
 {"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"nith@gmail.com","timestamp":"2022-06-01T10:54:57.356Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T10:58:47.783Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T10:58:47.807Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-01T11:04:51.554Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-01T11:05:14.042Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-01T11:05:15.292Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T11:05:23.062Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T11:05:23.066Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T11:05:24.063Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T11:05:24.096Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T11:05:31.051Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T11:05:54.985Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T11:05:56.097Z"}
+{"ip":"::1","level":"info","message":"Log DB was accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T11:06:03.177Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-01T11:06:32.862Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T12:07:18.609Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T12:07:18.652Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T12:07:21.240Z"}

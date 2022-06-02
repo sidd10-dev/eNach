@@ -1,10 +1,10 @@
-.container{
+.container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     /* border: black solid; */
-    margin-top: 10rem;
+    margin-top: 30vh;
 
     width: auto;
     height: 20rem;
@@ -28,23 +28,23 @@
     transition: 1s all;
 }
 
-.container:hover .line{
+.container:hover .line {
     transform: scaleX(1);
 }
 
-.login{
+.login {
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.login_form{
+.login_form {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
-.elements{
+.elements {
     /* border: solid black; */
     width: 100%;
     display: flex;
@@ -56,12 +56,12 @@
     margin-top: 3%;
 }
 
-.desc{
+.desc {
     margin-right: 2rem;
     font-weight: 200;
 }
 
-.box{
+.box {
     width: 20rem;
     height: 1rem;
     border-radius: 5rem;
@@ -71,17 +71,17 @@
     transition: 0.1s all;
 }
 
-.box:focus{
+.box:focus {
     border: black solid;
     transition: 0.5s all;
 }
 
-.box:hover{
+.box:hover {
     border: black solid;
     transition: 0.5s all;
 }
 
-.btn{
+.btn {
     margin-top: 1rem;
     width: 8rem;
     height: 2rem;
@@ -96,7 +96,7 @@
     box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 0.5);
 }
 
-.arrow{
+.arrow {
     margin-left: 5px;
     font-size: 15px;
 }
@@ -113,7 +113,7 @@
     transition: 1s all;
 }
 
-.container2:hover .line{
+.container2:hover .line {
     transform: scaleX(1);
 }
 
@@ -123,7 +123,7 @@
 /* end of animate */
 
 /* qr code */
-.container2{
+.container2 {
     background-color: white;
     width: 60%;
     margin-top: 8rem;
@@ -139,12 +139,12 @@
     /* border: purple solid; */
 }
 
-.head{
+.head {
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.split{
+.split {
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -154,12 +154,12 @@
     /* border: red solid; */
 }
 
-.qr{
+.qr {
     box-sizing: border-box;
     width: 27.5%;
 }
 
-.main{
+.main {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -168,38 +168,21 @@
     /* border: black solid; */
 }
 
-.tnc{
+.tnc {
     margin-bottom: 2rem;
 
     text-align: start;
 }
 
-.inst{
+.inst {
     text-align: center;
 }
 
 .instp {
     font-size: 1rem;
 }
+
 /* End of qr code */
-
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    /* border: black solid; */
-    margin-top: 10rem;
-
-    width: auto;
-    height: 20rem;
-    padding: 0 10rem;
-    position: relative;
-    /* border-top: 0.25rem solid white; */
-    background-color: white;
-    box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 0.5);
-    transition: 0.5s all;
-}
 
 .line {
     position: absolute;
@@ -213,23 +196,23 @@
     transition: 1s all;
 }
 
-.container:hover .line{
+.container:hover .line {
     transform: scaleX(1);
 }
 
-.login{
+.login {
     font-weight: 400;
     text-transform: uppercase;
 }
 
-.login_form{
+.login_form {
     display: flex;
     flex-direction: column;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
 }
 
-.elements{
+.elements {
     /* border: solid black; */
     width: 100%;
     display: flex;
@@ -237,12 +220,12 @@
     align-items: center;
 }
 
-.desc2{
+.desc2 {
     margin-right: 1rem;
     font-weight: 200;
 }
 
-.box2{
+.box2 {
     width: 20rem;
     height: 1rem;
     border-radius: 5rem;
@@ -252,17 +235,17 @@
     transition: 0.1s all;
 }
 
-.box2:focus{
+.box2:focus {
     border: black solid;
     transition: 0.5s all;
 }
 
-.box2:hover{
+.box2:hover {
     border: black solid;
     transition: 0.5s all;
 }
 
-.btn{
+.btn {
     margin-top: 1rem;
     width: 8rem;
     height: 2rem;
@@ -277,7 +260,7 @@
     box-shadow: 0.1rem 0.1rem 1rem rgba(30, 29, 29, 0.5);
 }
 
-.arrow{
+.arrow {
     margin-left: 5px;
     font-size: 15px;
 }
@@ -290,7 +273,7 @@
         transform: translateY(0.25rem);
     }
 
-    .box2{
+    .box2 {
         width: 17rem;
         height: 0.5rem;
         font-size: 0.8rem;
@@ -306,7 +289,7 @@
         transform: translateY(0.25rem);
     }
 
-    .box2{
+    .box2 {
         width: 15rem;
         height: 0.5rem;
         font-size: 0.8rem;
@@ -334,8 +317,9 @@
 
 @media (max-width: 1000px) {
     .qr {
-        margin-right: 3rem; 
+        margin-right: 3rem;
     }
+
     .inst {
         font-size: 1rem;
     }
@@ -356,10 +340,10 @@
         margin-left: 1.5rem;
         font-size: 1rem;
         /* margin-top: 0rem; */
-        
+
     }
 
-    .box2{
+    .box2 {
         width: 10rem;
         height: 0.5rem;
         padding: 0.3rem;
@@ -371,7 +355,7 @@
 }
 
 @media (max-width: 700px) {
-    .container2{
+    .container2 {
         height: 20rem;
     }
 
@@ -397,7 +381,7 @@
         font-size: 1rem;
     }
 
-    .box2{
+    .box2 {
         width: 10rem;
         height: 0.5rem;
         padding: 0.3rem;
@@ -445,16 +429,20 @@
     .inst {
         font-size: 0.6rem;
     }
+
     .instp {
         font-size: 0.5rem;
     }
+
     .desc2 {
         font-size: 0.8rem;
     }
+
     .box2 {
         width: 6rem;
         transform: translateY(-0.1rem);
     }
+
     .head {
         font-size: 1rem;
     }
@@ -527,6 +515,7 @@
         font-weight: 300;
         margin-left: 0;
     }
+
     .box2 {
         width: 3rem;
         font-size: 0.5rem;
@@ -542,6 +531,7 @@
     .inst {
         font-size: 0.5rem;
     }
+
     .instp {
         font-size: 0.4rem;
     }
@@ -612,10 +602,12 @@
         /* border: solid red; */
         padding: 0;
     }
+
     .desc2 {
         font-size: 0.6rem;
         font-weight: 300;
     }
+
     .box2 {
         width: 3rem;
         font-size: 0.5rem;
@@ -684,6 +676,7 @@
         height: 7rem;
         padding: 1rem;
     }
+
     /* .login_form {
         border: solid red;
     } */
