@@ -306,4 +306,11 @@ app.get('/api/staff_status', (req, res) => {
     })
 })
 
+app.post('/api/sendRequest', (req, res) => {
+    axios.post('https://emandateut.hdfcbank.com/Emandate.aspx', req.body).then(resp => {
+        console.log("response recieved")
+        console.log(resp)
+    }).catch(e => console.log(e))
+})
+
 app.listen(3001, () => console.log("Server running!"))

@@ -54,3 +54,26 @@
 {"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-01T10:50:37.010Z"}
 {"level":"error","message":"read ECONNRESET","timestamp":"2022-06-01T11:05:14.042Z"}
 {"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-01T11:05:15.292Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:27.174Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:48:33.770Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.091Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.093Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.095Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.096Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.097Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.098Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.099Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:48:38.530Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:49:22.101Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:49:31.919Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:49:46.935Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:50:26.720Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T06:11:50.016Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T06:11:50.017Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T06:12:01.734Z"}
+{"level":"error","timestamp":"2022-06-03T06:15:50.321Z"}
+{"level":"error","timestamp":"2022-06-03T07:34:25.237Z"}
+{"level":"error","timestamp":"2022-06-03T07:34:25.466Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T07:50:38.787Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T07:51:48.172Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T07:59:27.573Z"}

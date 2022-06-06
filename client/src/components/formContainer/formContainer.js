@@ -213,6 +213,15 @@ const FormContainer = (props) => {
             }
 
             console.log(reqBody)
+            axios.post('https://emandateut.hdfcbank.com/Emandate.aspx', reqBody, {
+                headers: {
+                    'Access-Control-Allow-Origin': '*',
+                    'Access-Control-Allow-Methods': 'GET,PUT,POST,DELETE,PATCH,OPTIONS',
+                }
+            }).then(resp => {
+                console.log("response recieved")
+                console.log(resp)
+            }).catch(e => console.log(e))
         }, 500);
     }
 

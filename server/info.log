@@ -699,3 +699,177 @@
 {"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-01T12:07:18.609Z"}
 {"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-01T12:07:18.652Z"}
 {"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-01T12:07:21.240Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-02T05:30:38.143Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-02T05:30:38.158Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T05:30:45.133Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T05:31:00.600Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T05:31:06.467Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:08:13.010Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:10:16.110Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:11:50.548Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:12:19.294Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:12:22.107Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:14:01.492Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:14:49.930Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:16:28.355Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:16:33.899Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:16:36.345Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:16:41.925Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:16:42.878Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-02T06:18:07.740Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:18:30.546Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:18:46.083Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-02T06:18:49.886Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-02T06:26:10.337Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T05:40:47.714Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T05:40:47.757Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:40:57.044Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:41:08.838Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:41:11.195Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:27.174Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:48:33.770Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.091Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.093Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.095Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.096Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.097Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.098Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T05:48:34.099Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-03T05:48:34.304Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:48:38.530Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:49:22.101Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:49:31.919Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:49:46.935Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T05:50:26.720Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T05:50:54.839Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T05:50:54.846Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:51:10.442Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:51:21.473Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:51:24.215Z"}
+{"ip":"::1","level":"info","message":"Log DB was accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:51:35.288Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:51:50.349Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:58:14.487Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-03T05:58:16.250Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T05:58:38.305Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T05:58:38.313Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:58:50.779Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:59:06.579Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:59:09.756Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T05:59:11.771Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"sidd.r2003@gmail.com","Customer_Mobile":"7358351795","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:01:53.746Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-08-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:01:53.757Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:01:54.302Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"sidd.r2003@gmail.com","Customer_Mobile":"7358351795","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:04:42.051Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-08-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:04:42.061Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:04:42.245Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"sidd.r2003@gmail.com","Customer_Mobile":"7358351795","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:05:25.596Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-08-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:05:25.603Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:05:25.868Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:05:33.761Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:06:02.146Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:06:18.923Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:06:23.942Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"sidd.r2003@gmail.com","Customer_Mobile":"7358351795","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:06:57.929Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-08-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:06:57.935Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:06:58.142Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:11:27.458Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-03T06:11:29.923Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T06:11:50.016Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T06:11:50.017Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T06:12:01.734Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:12:15.267Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:12:15.276Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:12:34.352Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:13:56.754Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:13:59.658Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:14:03.840Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"sidd.r2003@gmail.com","Customer_Mobile":"7358351795","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:14:30.989Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-08-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:14:31.000Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:14:31.156Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:15:04.351Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:15:09.041Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:15:09.049Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:15:15.801Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:15:15.811Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:15:22.148Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:15:22.153Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:15:25.941Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:15:25.951Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:15:30.963Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:15:30.976Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:15:32.898Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:15:32.911Z"}
+{"level":"error","timestamp":"2022-06-03T06:15:50.321Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:16:08.530Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:16:08.543Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:16:17.712Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:16:31.885Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:16:35.527Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"sidd.r2003@gmail.com","Customer_Mobile":"7358351795","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:16:58.075Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"998","Customer_ExpiryDate":"2022-07-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:16:58.087Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:16:58.298Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:17:59.446Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:17:59.643Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:18:01.282Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:18:01.295Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:20:42.564Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:20:42.580Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:20:46.113Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:20:54.036Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:20:58.448Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"sidd.r2003@gmail.com","Customer_Mobile":"7358351795","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:21:37.861Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-07-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:21:37.871Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:21:38.058Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T06:29:39.605Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T06:29:39.650Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:30:15.382Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:30:28.071Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:30:29.095Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"sidd.r2003@gmail.com","Customer_Mobile":"7358351795","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:30:59.305Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-07-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:30:59.313Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:30:59.585Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:33:04.664Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:33:12.593Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:33:14.426Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:33:58.592Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:37:26.757Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:37:27.233Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:37:28.344Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"JohnDoe@gmail.com","Customer_Mobile":"7358351795","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recur","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:38:44.735Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-07-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:38:44.746Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:38:44.809Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"JohnDoe@gmail.com","Customer_Mobile":"7358351795","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recur","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:38:49.965Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-07-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:38:49.972Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T06:38:50.113Z"}
+{"level":"error","timestamp":"2022-06-03T07:34:25.237Z"}
+{"level":"error","timestamp":"2022-06-03T07:34:25.466Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T07:35:20.128Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T07:35:20.137Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:37:12.803Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:37:26.287Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:37:27.934Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"sidd.r2003@gmail.com","Customer_Mobile":"7395800611","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:37:57.263Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-07-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:37:57.273Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:37:57.408Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"sidd.r2003@gmail.com","Customer_Mobile":"7395800611","Customer_Name":"John Doe","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:50:14.924Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-07-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:50:14.936Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T07:50:38.787Z"}
+{"level":"error","message":"Cannot enqueue Query after fatal error.","timestamp":"2022-06-03T07:51:48.172Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-03T07:51:51.943Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:51:52.404Z"}
+{"level":"info","message":"Connected to Log DB","requestBy":"-","timestamp":"2022-06-03T07:52:05.501Z"}
+{"level":"info","message":"Connected to DB","requestBy":"-","timestamp":"2022-06-03T07:52:05.513Z"}
+{"ip":"::1","level":"info","message":"Attempt to login. Valid Credentials","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:52:10.046Z"}
+{"ip":"::1","level":"info","message":"Attempt to login(2FA Code). Valid Code Entered. User Logged In","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:52:26.602Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:52:31.317Z"}
+{"ip":"::1","level":"info","message":"Request to Fetch Bank Data","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:53:47.972Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"siddhuneymar10@gmail.com","Customer_Mobile":"7395800612","Customer_Name":"SIDDHARTH R","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:54:38.105Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-07-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:54:38.114Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:54:38.284Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"siddhuneymar10@gmail.com","Customer_Mobile":"7395800612","Customer_Name":"SIDDHARTH R","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:54:39.436Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-07-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:54:39.448Z"}
+{"ip":"::1","level":"info","message":"Company Creds Accessed","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:54:39.948Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_EmailId":"siddhuneymar10@gmail.com","Customer_Mobile":"7395800612","Customer_Name":"SIDDHARTH R","Customer_Reference1":"50187305","Customer_Reference2":"Recurring","Short_Code":"","UtilCode":""},"ip":"::1","level":"info","message":"Request for aes256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:59:04.215Z"}
+{"data":{"Customer_AccountNo":"50100000005810","Customer_DebitAmount":"1000","Customer_ExpiryDate":"2022-07-03","Customer_MaxAmount":"1500","Customer_StartDate":"2022-06-03"},"ip":"::1","level":"info","message":"Request for sha256 Encryption","requestBy":"sidd.r2003@gmail.com","timestamp":"2022-06-03T07:59:04.226Z"}
+{"level":"error","message":"read ECONNRESET","timestamp":"2022-06-03T07:59:27.573Z"}
+{"ip":"::1","level":"info","message":"User has logged out of the system","timestamp":"2022-06-03T08:36:50.559Z"}
